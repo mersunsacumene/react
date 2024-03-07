@@ -4,7 +4,7 @@ function Login() {
   const [login, setLogin] = useState("");
   const [senha, setSenha] = useState("");
   const [erro, setErro] = useState("");
-  const envio = (e) => {
+  const vaiprala = (e) => {
     e.preventDefault();
     if (login !== "emerson35423@fiec.edu.br" || senha !== "123456") {
       setErro("Email e Senha errado");
@@ -14,7 +14,7 @@ function Login() {
   };
   return (
     <div>
-      <form onSubmit={envio}>
+      <form onSubmit={vaiprala}>
         <input
           type="email"
           placeholder="email"
